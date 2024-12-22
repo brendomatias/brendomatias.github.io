@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>cardápior dev</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img class="logo" src="/imgs/hamb-1.png" alt="">
+    <div class="header-inf">
+      <h1>Red Burguer</h1>
+      <p class="inf-endereco">Rua dev sucesso,Bairro Pombalzinho,N15,Recife,PE</p>
+      <span id="horario">Seg á Dom - 18:00 as 3:00</span>
+    </div>
+  </header>
+  <main class="main">
+    <h1>Conheça Nosso Menu</h1>
+    <div id="cardapio" class="cardapio">
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-2.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> Cheese Burger Duplo</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('Cheese Burger Duplo',35,1,1)" class="comprar">
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-3.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> Cheese Burger tripo</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('Cheese Burger tripo',35,2,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-4.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> x-burgue</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('x-burgue',35,3,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-1.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> hambuguer tradicional</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('hambuguer tradiciona5l',35,4,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-2.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> hamburgue-x-ovo</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('hamburgue-x-ovo',35,5,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-3.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> hamburgueKid</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('hamburgueKid',35,6,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-4.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> hamburgue mostro</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('hamburgue mostro',35,7,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hamburgue">
+        <img class="hamburgue-img" src="/imgs/hamb-1.png" alt="">
+        <div class="inf">
+          <h2 class="nome-hambuguer"> hamburgue pimenta</h2>
+          <p class="descricao"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa</p>
+          <div class="inf-comprar">
+            <span>R$ 35,00</span>
+            <button onclick="adicionarNaLista('hamburgue pimenta',35,8,1)" class="comprar"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <button onclick="pagar()" class="carrinhoPagar">
+      <p>(<span id="carrinho">0</span>) veja seu carrinho</p><img src="/imgs/carrinho.png" alt="">
+    </button>
+    </button>
+  </footer>
+  <div id="carrinho-pagar">
+    <div class="menu-pagar">
+      <h2>Seu carrinho</h2>
+      <div id="item">
+        <div id="itens">
+          <div class="itens">
+            <img class="imagemHamburger itens-imgs" src="" alt="">
+            <div class="itens-descricao">
+              <h1 class="nomeHambugue">nome do hamburgue</h1>
+              <p>quantidade: <span class="quantidadeHambugue">0</span></p>
+              <p>preço unidade: <span class="unidadedeHambugue">0 </span></p>
+              <p>preço total: <span class="preçodeHambugue">0</span></p>
+            </div>
+            <button class="itens-butoes" onclick="removerHambugueradoCarrinho()" id="removerHambugue">remover</button>
+          </div>
+        </div>
+      </div>
+      <div class="endereco">
+        <span>Endereço de entrega:</span>
+        <input type="text">
+      </div>
+      <div class="opcoesPagar">
+        <button onclick="fecharComprar()">Fechar</button>
+        <button>Finalizar Pedido</button>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

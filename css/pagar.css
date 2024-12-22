@@ -1,0 +1,77 @@
+#carrinho-pagar{
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.752);
+  top: 0;
+}
+
+.menu-pagar{
+  background-color: #fff;
+  display: grid;
+  gap: 3rem;
+  align-content: start;
+  justify-items: center;
+  align-items: center;
+  
+  width: 40rem;
+  position: fixed;
+  left: 25%;
+  top:7%;
+  border-radius: 5px;
+  padding: 2rem 0;
+}
+
+
+.div-valores{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  height: 20rem;
+}
+
+
+#item{
+  max-height: 20rem;
+}
+
+#itens{
+  display: none;
+}
+
+.itens{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin: 1rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  max-height: 10rem;
+}
+
+.itens-butoes{
+  width: 5rem;
+  align-items: end;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.itens-butoes:hover{
+  width: 5rem;
+  align-items: end;
+  margin: 0 auto;
+  border-color: rgb(105, 11, 11);
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+.rolagem{
+  overflow-y: scroll;
+}

@@ -1,0 +1,19 @@
+.footer{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(229, 16, 16);
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.footer img{
+  width: 1rem;
+}
+
+.carrinhoPagar{
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
