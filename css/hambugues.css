@@ -71,10 +71,16 @@
 .comprar img{
   width: 1rem;
 }
+.cardapio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin:  0 auto;
+}
 
 @media (max-width:900px){
   .cardapio{
-    display: grid;
+    display: block;
   }
 }
 
